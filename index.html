@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Blizzard Community Platform API Documentation</title><link rel="stylesheet" href="style.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"><meta name="description" content="This is the documentation for the RESTful APIs exposed through the World of Warcraft community site as a service to the World of Warcraft community."></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book" title="Blizzard Community Platform API Documentation"><div class="titlepage"><div><div><h1 class="title"><a name="idp104"></a>Blizzard Community Platform API Documentation</h1></div><div><div class="author"><h3 class="author">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Blizzard Community Platform API Documentation</title><link rel="stylesheet" href="style.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"><meta name="description" content="This is the documentation for the RESTful APIs exposed through the World of Warcraft community site as a service to the World of Warcraft community."></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book" title="Blizzard Community Platform API Documentation"><div class="titlepage"><div><div><h1 class="title"><a name="idp128"></a>Blizzard Community Platform API Documentation</h1></div><div><div class="author"><h3 class="author">
       <span class="orgname">Blizzard Entertainment</span>
 
       <code class="email">&lt;<a class="email" href="mailto:api-support@blizzard.com">api-support@blizzard.com</a>&gt;</code>
@@ -6,10 +6,10 @@
       <p>This is the documentation for the RESTful APIs exposed through the
       World of Warcraft community site as a service to the World of Warcraft
       community.</p>
-    </div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="preface"><a href="#idp6872">Introduction</a></span></dt><dt><span class="chapter"><a href="#idp12280">1. Features</a></span></dt><dd><dl><dt><span class="section"><a href="#idp8952">REST</a></span></dt><dt><span class="section"><a href="#idp9104">Access and Regions</a></span></dt><dd><dl><dt><span class="section"><a href="#idp19064">Localization</a></span></dt></dl></dd><dt><span class="section"><a href="#idp28632">Throttling</a></span></dt><dt><span class="section"><a href="#idp29704">Authentication</a></span></dt><dd><dl><dt><span class="section"><a href="#idp31064">Application Registration</a></span></dt><dt><span class="section"><a href="#idp34120">Authentication Process</a></span></dt></dl></dd><dt><span class="section"><a href="#idp40248">Formats and Protocols</a></span></dt><dt><span class="section"><a href="#idp41096">Error Handling</a></span></dt><dt><span class="section"><a href="#idp54688">Support</a></span></dt></dl></dd><dt><span class="chapter"><a href="#idp56536">2. API Reference</a></span></dt><dd><dl><dt><span class="section"><a href="#idp56960">Character Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp57632">Profile</a></span></dt></dl></dd><dt><span class="section"><a href="#idp131968">Guild Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp132544">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp154272">Realm Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp154848">Realm Status</a></span></dt></dl></dd><dt><span class="section"><a href="#idp158072">Auction Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp159000">Current Auctions APIs</a></span></dt><dt><span class="section"><a href="#idp161488">Current Auctions Data</a></span></dt></dl></dd><dt><span class="section"><a href="#idp163488">Item Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp164056">Item API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp166904">PVP Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp167672">Arena Team API</a></span></dt><dt><span class="section"><a href="#idp171048">Arena Ladder API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp177208">Quest Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp177920">Quest API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp180216">Data Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp181144">Battlegroups</a></span></dt><dt><span class="section"><a href="#idp182072">Character Races</a></span></dt><dt><span class="section"><a href="#idp183072">Character Classes</a></span></dt><dt><span class="section"><a href="#idp184096">Character Achievements</a></span></dt><dt><span class="section"><a href="#idp185176">Guild Rewards</a></span></dt><dt><span class="section"><a href="#idp186120">Guild Perks</a></span></dt><dt><span class="section"><a href="#idp187104">Guild Achievements</a></span></dt><dt><span class="section"><a href="#idp188240">Item Classes</a></span></dt><dt><span class="section"><a href="#idp189160">Battlegroups</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#idp180376">3. API Policy</a></span></dt><dd><dl><dt><span class="section"><a href="#idp191320">Intended Audience</a></span></dt><dt><span class="section"><a href="#idp194384">Service Availability Notice</a></span></dt><dt><span class="section"><a href="#idp198120">Applications may not charge premiums for features that use the API.</a></span></dt><dt><span class="section"><a href="#idp199384">Applications must not negatively impact Blizzard Entertainment games, services, or other players.</a></span></dt><dt><span class="section"><a href="#idp200320">Application code must be completely visible.</a></span></dt><dt><span class="section"><a href="#idp201240">Applications may not imply any association with Blizzard Entertainment.</a></span></dt><dt><span class="section"><a href="#idp202032">Applications must not contain offensive or objectionable material.</a></span></dt><dt><span class="section"><a href="#idp203248">Blizzard trademarks, titles, or tradenames should not be used when naming an application.</a></span></dt><dt><span class="section"><a href="#idp204152">License for Use</a></span></dt><dt><span class="section"><a href="#idp205144">Policy Compliance Notice</a></span></dt><dt><span class="section"><a href="#idp205768"></a></span></dt></dl></dd></dl></div>
+    </div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="preface"><a href="#idm64">Introduction</a></span></dt><dt><span class="chapter"><a href="#idp51993256">1. Features</a></span></dt><dd><dl><dt><span class="section"><a href="#idp51996664">REST</a></span></dt><dt><span class="section"><a href="#idp52003456">Access and Regions</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52007912">Localization</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52018064">Throttling</a></span></dt><dt><span class="section"><a href="#idp52018672">Authentication</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52020488">Application Registration</a></span></dt><dt><span class="section"><a href="#idp52023552">Authentication Process</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52029616">Formats and Protocols</a></span></dt><dt><span class="section"><a href="#idp52030464">Error Handling</a></span></dt><dt><span class="section"><a href="#idp52043904">Support</a></span></dt></dl></dd><dt><span class="chapter"><a href="#idp52045616">2. API Reference</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52046088">Character Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52046744">Profile</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52120408">Guild Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52120984">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52142792">Realm Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52143368">Realm Status</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52146984">Auction Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52147816">Current Auctions APIs</a></span></dt><dt><span class="section"><a href="#idp52150416">Current Auctions Data</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52152448">Item Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52153016">Item API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52155968">PVP Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52156640">Arena Team API</a></span></dt><dt><span class="section"><a href="#idp52160056">Arena Ladder API</a></span></dt><dt><span class="section"><a href="#idp52166136">Rated Battleground Ladder API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52169368">Quest Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52169936">Quest API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52172280">Data Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52173208">Battlegroups</a></span></dt><dt><span class="section"><a href="#idp52174136">Character Races</a></span></dt><dt><span class="section"><a href="#idp52175136">Character Classes</a></span></dt><dt><span class="section"><a href="#idp52176160">Character Achievements</a></span></dt><dt><span class="section"><a href="#idp52177240">Guild Rewards</a></span></dt><dt><span class="section"><a href="#idp52178184">Guild Perks</a></span></dt><dt><span class="section"><a href="#idp52179168">Guild Achievements</a></span></dt><dt><span class="section"><a href="#idp52180304">Item Classes</a></span></dt><dt><span class="section"><a href="#idp52181224">Battlegroups</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#idp52172440">3. API Policy</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52183384">Intended Audience</a></span></dt><dt><span class="section"><a href="#idp52186448">Service Availability Notice</a></span></dt><dt><span class="section"><a href="#idp52190184">Applications may not charge premiums for features that use the API.</a></span></dt><dt><span class="section"><a href="#idp52191448">Applications must not negatively impact Blizzard Entertainment games, services, or other players.</a></span></dt><dt><span class="section"><a href="#idp52192416">Application code must be completely visible.</a></span></dt><dt><span class="section"><a href="#idp52193304">Applications may not imply any association with Blizzard Entertainment.</a></span></dt><dt><span class="section"><a href="#idp52194160">Applications must not contain offensive or objectionable material.</a></span></dt><dt><span class="section"><a href="#idp52195336">Blizzard trademarks, titles, or tradenames should not be used when naming an application.</a></span></dt><dt><span class="section"><a href="#idp52196240">License for Use</a></span></dt><dt><span class="section"><a href="#idp52197232">Policy Compliance Notice</a></span></dt><dt><span class="section"><a href="#idp52197856"></a></span></dt></dl></dd></dl></div>
   
 
-  <div class="preface" title="Introduction"><div class="titlepage"><div><div><h2 class="title"><a name="idp6872"></a>Introduction</h2></div></div></div>
+  <div class="preface" title="Introduction"><div class="titlepage"><div><div><h2 class="title"><a name="idm64"></a>Introduction</h2></div></div></div>
     
 
     <p>The Blizzard Community Platform API provides a number of resources
@@ -23,7 +23,7 @@
     communities to continue that epic experience.</p>
   </div>
 
-  <div class="chapter" title="Chapter 1. Features"><div class="titlepage"><div><div><h2 class="title"><a name="idp12280"></a>Chapter 1. Features</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#idp8952">REST</a></span></dt><dt><span class="section"><a href="#idp9104">Access and Regions</a></span></dt><dd><dl><dt><span class="section"><a href="#idp19064">Localization</a></span></dt></dl></dd><dt><span class="section"><a href="#idp28632">Throttling</a></span></dt><dt><span class="section"><a href="#idp29704">Authentication</a></span></dt><dd><dl><dt><span class="section"><a href="#idp31064">Application Registration</a></span></dt><dt><span class="section"><a href="#idp34120">Authentication Process</a></span></dt></dl></dd><dt><span class="section"><a href="#idp40248">Formats and Protocols</a></span></dt><dt><span class="section"><a href="#idp41096">Error Handling</a></span></dt><dt><span class="section"><a href="#idp54688">Support</a></span></dt></dl></div>
+  <div class="chapter" title="Chapter 1. Features"><div class="titlepage"><div><div><h2 class="title"><a name="idp51993256"></a>Chapter 1. Features</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#idp51996664">REST</a></span></dt><dt><span class="section"><a href="#idp52003456">Access and Regions</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52007912">Localization</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52018064">Throttling</a></span></dt><dt><span class="section"><a href="#idp52018672">Authentication</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52020488">Application Registration</a></span></dt><dt><span class="section"><a href="#idp52023552">Authentication Process</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52029616">Formats and Protocols</a></span></dt><dt><span class="section"><a href="#idp52030464">Error Handling</a></span></dt><dt><span class="section"><a href="#idp52043904">Support</a></span></dt></dl></div>
     
 
     <p>Before getting started with the Community Platform API, programmers
@@ -32,7 +32,7 @@
     API. It is recommended that the reader have knowledge of the HTTP protocol
     as well as a general understanding of web technologies.</p>
 
-    <div class="section" title="REST"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp8952"></a>REST</h2></div></div></div>
+    <div class="section" title="REST"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp51996664"></a>REST</h2></div></div></div>
       
 
       <p>The API is <span class="emphasis"><em>mostly</em></span> RESTful. Data is exposed in
@@ -44,13 +44,13 @@
       contain the "If-Modified-Since" header.</p>
     </div>
 
-    <div class="section" title="Access and Regions"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp9104"></a>Access and Regions</h2></div></div></div>
+    <div class="section" title="Access and Regions"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52003456"></a>Access and Regions</h2></div></div></div>
       
 
       <p>To access the API, HTTP requests can be made to specific URLs and
       resources exposed on the regional Battle.net domains.</p>
 
-      <div class="example"><a name="idp7584"></a><p class="title"><b>Example 1.1. An example API request and response.</b></p><div class="example-contents">
+      <div class="example"><a name="idp52004192"></a><p class="title"><b>Example 1.1. An example API request and response.</b></p><div class="example-contents">
         
 
         <pre class="programlisting">GET /api/wow/realm/status HTTP/1.1
@@ -81,7 +81,7 @@ Host: us.battle.net
       limited to those supported on the World of Warcraft community
       sites.</p>
 
-      <div class="section" title="Localization"><div class="titlepage"><div><div><h3 class="title"><a name="idp19064"></a>Localization</h3></div></div></div>
+      <div class="section" title="Localization"><div class="titlepage"><div><div><h3 class="title"><a name="idp52007912"></a>Localization</h3></div></div></div>
         
 
         <p>All of the API resources provided adhere to the practice of
@@ -123,7 +123,7 @@ Host: us.battle.net
       </div>
     </div>
 
-    <div class="section" title="Throttling"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp28632"></a>Throttling</h2></div></div></div>
+    <div class="section" title="Throttling"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52018064"></a>Throttling</h2></div></div></div>
       
 
       <p>Consumers of the API can make a limited number of requests per
@@ -134,7 +134,7 @@ Host: us.battle.net
       available to registered applications.</p>
     </div>
 
-    <div class="section" title="Authentication"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp29704"></a>Authentication</h2></div></div></div>
+    <div class="section" title="Authentication"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52018672"></a>Authentication</h2></div></div></div>
       
 
       <p>Although most of the application can be accessed without any form
@@ -146,7 +146,7 @@ Host: us.battle.net
       <p>The primary benefit to making requests as an authenticated
       application is that you can make more requests per day.</p>
 
-      <div class="section" title="Application Registration"><div class="titlepage"><div><div><h3 class="title"><a name="idp31064"></a>Application Registration</h3></div></div></div>
+      <div class="section" title="Application Registration"><div class="titlepage"><div><div><h3 class="title"><a name="idp52020488"></a>Application Registration</h3></div></div></div>
         
 
         <p>To send authenticated request you first need to register an
@@ -170,14 +170,14 @@ Host: us.battle.net
         or with application keys to use.</p>
       </div>
 
-      <div class="section" title="Authentication Process"><div class="titlepage"><div><div><h3 class="title"><a name="idp34120"></a>Authentication Process</h3></div></div></div>
+      <div class="section" title="Authentication Process"><div class="titlepage"><div><div><h3 class="title"><a name="idp52023552"></a>Authentication Process</h3></div></div></div>
         
 
         <p>To authenticate a request, simple include the "Authorization"
         header with your application identifier and the request
         signature.</p>
 
-        <div class="example"><a name="idp34968"></a><p class="title"><b>Example 1.2. An example authenticated request</b></p><div class="example-contents">
+        <div class="example"><a name="idp52024304"></a><p class="title"><b>Example 1.2. An example authenticated request</b></p><div class="example-contents">
           
 
           <pre class="programlisting">GET /api/wow/character/Medivh/Thrall HTTP/1.1
@@ -232,7 +232,7 @@ Header = "Authorization: BNET" + " " + "examplekey" + ":" + Signature;</pre>
       </div>
     </div>
 
-    <div class="section" title="Formats and Protocols"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp40248"></a>Formats and Protocols</h2></div></div></div>
+    <div class="section" title="Formats and Protocols"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52029616"></a>Formats and Protocols</h2></div></div></div>
       
 
       <p>Data returned in the response message is provided in JSON format.
@@ -240,7 +240,7 @@ Header = "Authorization: BNET" + " " + "examplekey" + ":" + Signature;</pre>
       additional information.</p>
     </div>
 
-    <div class="section" title="Error Handling"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp41096"></a>Error Handling</h2></div></div></div>
+    <div class="section" title="Error Handling"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52030464"></a>Error Handling</h2></div></div></div>
       
 
       <p>Although several of the API resources have specific error
@@ -297,7 +297,7 @@ Header = "Authorization: BNET" + " " + "examplekey" + ":" + Signature;</pre>
             second window from the current GMT time.</p>
           </dd></dl></div>
 
-      <div class="example"><a name="idp53592"></a><p class="title"><b>Example 1.3. An example API request and and error response</b></p><div class="example-contents">
+      <div class="example"><a name="idp52042808"></a><p class="title"><b>Example 1.3. An example API request and and error response</b></p><div class="example-contents">
         
 
         <pre class="programlisting">GET /api/wow/data/boss/45 HTTP/1.1
@@ -311,7 +311,7 @@ Host: us.battle.net
       </div></div><br class="example-break">
     </div>
 
-    <div class="section" title="Support"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp54688"></a>Support</h2></div></div></div>
+    <div class="section" title="Support"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52043904"></a>Support</h2></div></div></div>
       
 
       <p>For questions about the API, please use the Community Platform API
@@ -324,16 +324,16 @@ Host: us.battle.net
     </div>
   </div>
 
-  <div class="chapter" title="Chapter 2. API Reference"><div class="titlepage"><div><div><h2 class="title"><a name="idp56536"></a>Chapter 2. API Reference</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#idp56960">Character Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp57632">Profile</a></span></dt></dl></dd><dt><span class="section"><a href="#idp131968">Guild Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp132544">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp154272">Realm Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp154848">Realm Status</a></span></dt></dl></dd><dt><span class="section"><a href="#idp158072">Auction Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp159000">Current Auctions APIs</a></span></dt><dt><span class="section"><a href="#idp161488">Current Auctions Data</a></span></dt></dl></dd><dt><span class="section"><a href="#idp163488">Item Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp164056">Item API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp166904">PVP Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp167672">Arena Team API</a></span></dt><dt><span class="section"><a href="#idp171048">Arena Ladder API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp177208">Quest Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp177920">Quest API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp180216">Data Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp181144">Battlegroups</a></span></dt><dt><span class="section"><a href="#idp182072">Character Races</a></span></dt><dt><span class="section"><a href="#idp183072">Character Classes</a></span></dt><dt><span class="section"><a href="#idp184096">Character Achievements</a></span></dt><dt><span class="section"><a href="#idp185176">Guild Rewards</a></span></dt><dt><span class="section"><a href="#idp186120">Guild Perks</a></span></dt><dt><span class="section"><a href="#idp187104">Guild Achievements</a></span></dt><dt><span class="section"><a href="#idp188240">Item Classes</a></span></dt><dt><span class="section"><a href="#idp189160">Battlegroups</a></span></dt></dl></dd></dl></div>
+  <div class="chapter" title="Chapter 2. API Reference"><div class="titlepage"><div><div><h2 class="title"><a name="idp52045616"></a>Chapter 2. API Reference</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#idp52046088">Character Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52046744">Profile</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52120408">Guild Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52120984">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52142792">Realm Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52143368">Realm Status</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52146984">Auction Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52147816">Current Auctions APIs</a></span></dt><dt><span class="section"><a href="#idp52150416">Current Auctions Data</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52152448">Item Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52153016">Item API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52155968">PVP Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52156640">Arena Team API</a></span></dt><dt><span class="section"><a href="#idp52160056">Arena Ladder API</a></span></dt><dt><span class="section"><a href="#idp52166136">Rated Battleground Ladder API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52169368">Quest Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52169936">Quest API</a></span></dt></dl></dd><dt><span class="section"><a href="#idp52172280">Data Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#idp52173208">Battlegroups</a></span></dt><dt><span class="section"><a href="#idp52174136">Character Races</a></span></dt><dt><span class="section"><a href="#idp52175136">Character Classes</a></span></dt><dt><span class="section"><a href="#idp52176160">Character Achievements</a></span></dt><dt><span class="section"><a href="#idp52177240">Guild Rewards</a></span></dt><dt><span class="section"><a href="#idp52178184">Guild Perks</a></span></dt><dt><span class="section"><a href="#idp52179168">Guild Achievements</a></span></dt><dt><span class="section"><a href="#idp52180304">Item Classes</a></span></dt><dt><span class="section"><a href="#idp52181224">Battlegroups</a></span></dt></dl></dd></dl></div>
     
 
-    <div class="section" title="Character Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp56960"></a>Character Resources</h2></div></div></div>
+    <div class="section" title="Character Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52046088"></a>Character Resources</h2></div></div></div>
       
 
       <p>Character APIs currently provide character profile
       information.</p>
 
-      <div class="section" title="Profile"><div class="titlepage"><div><div><h3 class="title"><a name="idp57632"></a>Profile</h3></div></div></div>
+      <div class="section" title="Profile"><div class="titlepage"><div><div><h3 class="title"><a name="idp52046744"></a>Profile</h3></div></div></div>
         
 
         <p>The Character Profile API is the primary way to access character
@@ -354,7 +354,7 @@ Realm = &lt;proper realm name&gt; | &lt;normalized realm name&gt;</pre>
         optional datasets is to be retrieved. Those additional fields are
         listed in the subsection titled "Optional Fields".</p>
 
-        <div class="example"><a name="idp59944"></a><p class="title"><b>Example 2.1. An example Character Profile API request and
+        <div class="example"><a name="idp52048968"></a><p class="title"><b>Example 2.1. An example Character Profile API request and
           response.</b></p><div class="example-contents">
           
 
@@ -372,7 +372,7 @@ Host: us.battle.net</pre>
         level, last modified timestamp, thumbnail, race id, achievement points
         value, gender id and class id.</p>
 
-        <div class="section" title="Optional Fields"><div class="titlepage"><div><div><h4 class="title"><a name="idp61592"></a>Optional Fields</h4></div></div></div>
+        <div class="section" title="Optional Fields"><div class="titlepage"><div><div><h4 class="title"><a name="idp52050512"></a>Optional Fields</h4></div></div></div>
           
 
           <p>This section contains a list of the optional fields that can
@@ -428,7 +428,7 @@ Host: us.battle.net</pre>
                 <p>A list of quests completed by the character.</p>
               </dd></dl></div>
 
-          <div class="example"><a name="idp79048"></a><p class="title"><b>Example 2.2. An example Character Profile request with several addtional
+          <div class="example"><a name="idp52067552"></a><p class="title"><b>Example 2.2. An example Character Profile request with several addtional
             fields.</b></p><div class="example-contents">
             
 
@@ -436,7 +436,7 @@ Host: us.battle.net</pre>
 Host: us.battle.net</pre>
           </div></div><br class="example-break">
 
-          <div class="section" title="guild"><div class="titlepage"><div><div><h5 class="title"><a name="idp79888"></a>guild</h5></div></div></div>
+          <div class="section" title="guild"><div class="titlepage"><div><div><h5 class="title"><a name="idp52068392"></a>guild</h5></div></div></div>
             
 
             <p>When a guild is requested, a map is returned with key/value
@@ -446,7 +446,7 @@ Host: us.battle.net</pre>
             the character's rank within the guild, you must specific a
             seperate request to the guild profile resource.</p>
 
-            <div class="example"><a name="idp80976"></a><p class="title"><b>Example 2.3. An example guild field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52069352"></a><p class="title"><b>Example 2.3. An example guild field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -468,14 +468,14 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="items"><div class="titlepage"><div><div><h5 class="title"><a name="idp82264"></a>items</h5></div></div></div>
+          <div class="section" title="items"><div class="titlepage"><div><div><h5 class="title"><a name="idp52070696"></a>items</h5></div></div></div>
             
 
             <p>When the items field is used, a map structure is returned
             that contains information on the equipped items of that character
             as well as the average item level of the character.</p>
 
-            <div class="example"><a name="idp83072"></a><p class="title"><b>Example 2.4. An example items field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52071440"></a><p class="title"><b>Example 2.4. An example items field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{ "items" : { "averageItemLevel" : 353,
@@ -634,10 +634,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="stats"><div class="titlepage"><div><div><h5 class="title"><a name="idp88672"></a>stats</h5></div></div></div>
+          <div class="section" title="stats"><div class="titlepage"><div><div><h5 class="title"><a name="idp52077120"></a>stats</h5></div></div></div>
             
 
-            <div class="example"><a name="idp88992"></a><p class="title"><b>Example 2.5. An example stats field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52077592"></a><p class="title"><b>Example 2.5. An example stats field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -696,10 +696,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="talents"><div class="titlepage"><div><div><h5 class="title"><a name="idp91096"></a>talents</h5></div></div></div>
+          <div class="section" title="talents"><div class="titlepage"><div><div><h5 class="title"><a name="idp52079568"></a>talents</h5></div></div></div>
             
 
-            <div class="example"><a name="idp91432"></a><p class="title"><b>Example 2.6. An example talents field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52079888"></a><p class="title"><b>Example 2.6. An example talents field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -873,10 +873,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="reputation"><div class="titlepage"><div><div><h5 class="title"><a name="idp96608"></a>reputation</h5></div></div></div>
+          <div class="section" title="reputation"><div class="titlepage"><div><div><h5 class="title"><a name="idp52085048"></a>reputation</h5></div></div></div>
             
 
-            <div class="example"><a name="idp96952"></a><p class="title"><b>Example 2.7. An example reputation field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52085384"></a><p class="title"><b>Example 2.7. An example reputation field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -922,10 +922,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="titles"><div class="titlepage"><div><div><h5 class="title"><a name="idp98536"></a>titles</h5></div></div></div>
+          <div class="section" title="titles"><div class="titlepage"><div><div><h5 class="title"><a name="idp52086976"></a>titles</h5></div></div></div>
             
 
-            <div class="example"><a name="idp98880"></a><p class="title"><b>Example 2.8. An example titles field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52087320"></a><p class="title"><b>Example 2.8. An example titles field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -977,10 +977,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="professions"><div class="titlepage"><div><div><h5 class="title"><a name="idp100496"></a>professions</h5></div></div></div>
+          <div class="section" title="professions"><div class="titlepage"><div><div><h5 class="title"><a name="idp52088936"></a>professions</h5></div></div></div>
             
 
-            <div class="example"><a name="idp100840"></a><p class="title"><b>Example 2.9. An example professions field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52089280"></a><p class="title"><b>Example 2.9. An example professions field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -1068,10 +1068,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="appearance"><div class="titlepage"><div><div><h5 class="title"><a name="idp103240"></a>appearance</h5></div></div></div>
+          <div class="section" title="appearance"><div class="titlepage"><div><div><h5 class="title"><a name="idp52091680"></a>appearance</h5></div></div></div>
             
 
-            <div class="example"><a name="idp103584"></a><p class="title"><b>Example 2.10. An example appearance field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52092024"></a><p class="title"><b>Example 2.10. An example appearance field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -1088,10 +1088,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="companions"><div class="titlepage"><div><div><h5 class="title"><a name="idp104784"></a>companions</h5></div></div></div>
+          <div class="section" title="companions"><div class="titlepage"><div><div><h5 class="title"><a name="idp52093224"></a>companions</h5></div></div></div>
             
 
-            <div class="example"><a name="idp105104"></a><p class="title"><b>Example 2.11. An example companions field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52093544"></a><p class="title"><b>Example 2.11. An example companions field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -1106,10 +1106,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="mounts"><div class="titlepage"><div><div><h5 class="title"><a name="idp106152"></a>mounts</h5></div></div></div>
+          <div class="section" title="mounts"><div class="titlepage"><div><div><h5 class="title"><a name="idp52094592"></a>mounts</h5></div></div></div>
             
 
-            <div class="example"><a name="idp106496"></a><p class="title"><b>Example 2.12. An example mounts field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52094936"></a><p class="title"><b>Example 2.12. An example mounts field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -1120,10 +1120,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="pets"><div class="titlepage"><div><div><h5 class="title"><a name="idp107544"></a>pets</h5></div></div></div>
+          <div class="section" title="pets"><div class="titlepage"><div><div><h5 class="title"><a name="idp52095984"></a>pets</h5></div></div></div>
             
 
-            <div class="example"><a name="idp107864"></a><p class="title"><b>Example 2.13. An example pets field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52096304"></a><p class="title"><b>Example 2.13. An example pets field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -1154,10 +1154,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="achievements"><div class="titlepage"><div><div><h5 class="title"><a name="idp109176"></a>achievements</h5></div></div></div>
+          <div class="section" title="achievements"><div class="titlepage"><div><div><h5 class="title"><a name="idp52097616"></a>achievements</h5></div></div></div>
             
 
-            <div class="example"><a name="idp109496"></a><p class="title"><b>Example 2.14. An example achievements field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52097936"></a><p class="title"><b>Example 2.14. An example achievements field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -1173,10 +1173,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="progression"><div class="titlepage"><div><div><h5 class="title"><a name="idp110736"></a>progression</h5></div></div></div>
+          <div class="section" title="progression"><div class="titlepage"><div><div><h5 class="title"><a name="idp52099176"></a>progression</h5></div></div></div>
             
 
-            <div class="example"><a name="idp111056"></a><p class="title"><b>Example 2.15. An example progression field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52099496"></a><p class="title"><b>Example 2.15. An example progression field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -1930,10 +1930,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="pvp"><div class="titlepage"><div><div><h5 class="title"><a name="idp128128"></a>pvp</h5></div></div></div>
+          <div class="section" title="pvp"><div class="titlepage"><div><div><h5 class="title"><a name="idp52116568"></a>pvp</h5></div></div></div>
             
 
-            <div class="example"><a name="idp128512"></a><p class="title"><b>Example 2.16. An example pvp field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52116952"></a><p class="title"><b>Example 2.16. An example pvp field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">"pvp":{
@@ -1985,10 +1985,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="quests"><div class="titlepage"><div><div><h5 class="title"><a name="idp130448"></a>quests</h5></div></div></div>
+          <div class="section" title="quests"><div class="titlepage"><div><div><h5 class="title"><a name="idp52118888"></a>quests</h5></div></div></div>
             
 
-            <div class="example"><a name="idp130784"></a><p class="title"><b>Example 2.17. An example quests field</b></p><div class="example-contents">
+            <div class="example"><a name="idp52119224"></a><p class="title"><b>Example 2.17. An example quests field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -2013,12 +2013,12 @@ Host: us.battle.net</pre>
       </div>
     </div>
 
-    <div class="section" title="Guild Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp131968"></a>Guild Resources</h2></div></div></div>
+    <div class="section" title="Guild Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52120408"></a>Guild Resources</h2></div></div></div>
       
 
       <p>Guild APIs currently provide guild profile information.</p>
 
-      <div class="section" title="Profile API"><div class="titlepage"><div><div><h3 class="title"><a name="idp132544"></a>Profile API</h3></div></div></div>
+      <div class="section" title="Profile API"><div class="titlepage"><div><div><h3 class="title"><a name="idp52120984"></a>Profile API</h3></div></div></div>
         
 
         <p>The guild profile API is the primary way to access guild
@@ -2039,7 +2039,7 @@ Realm = &lt;proper realm name&gt; | &lt;normalized realm name&gt;</pre>
         optional datasets is to be retrieved. Those additional fields are
         listed in the subsection titled "Optional Fields".</p>
 
-        <div class="example"><a name="idp134664"></a><p class="title"><b>Example 2.18. An example Guild Profile request and response.</b></p><div class="example-contents">
+        <div class="example"><a name="idp52123104"></a><p class="title"><b>Example 2.18. An example Guild Profile request and response.</b></p><div class="example-contents">
           
 
           <pre class="programlisting">GET /api/wow/guild/Medivh/Knights%20of%20the%20Silver%20Hand
@@ -2054,7 +2054,7 @@ Host: us.battle.net</pre>
         <p>The core dataset returned includes the guild's name, level,
         faction and achievement points.</p>
 
-        <div class="section" title="Optional Fields"><div class="titlepage"><div><div><h4 class="title"><a name="idp136128"></a>Optional Fields</h4></div></div></div>
+        <div class="section" title="Optional Fields"><div class="titlepage"><div><div><h4 class="title"><a name="idp52124568"></a>Optional Fields</h4></div></div></div>
           
 
           <p>This section contains a list of the optional fields that can
@@ -2068,7 +2068,7 @@ Host: us.battle.net</pre>
                 earned by the guild.</p>
               </dd></dl></div>
 
-          <div class="example"><a name="idp139328"></a><p class="title"><b>Example 2.19. An example Guild Profile request with several addtional
+          <div class="example"><a name="idp52127768"></a><p class="title"><b>Example 2.19. An example Guild Profile request with several addtional
             fields.</b></p><div class="example-contents">
             
 
@@ -2076,14 +2076,14 @@ Host: us.battle.net</pre>
 Host: us.battle.net</pre>
           </div></div><br class="example-break">
 
-          <div class="section" title="members"><div class="titlepage"><div><div><h5 class="title"><a name="idp140176"></a>members</h5></div></div></div>
+          <div class="section" title="members"><div class="titlepage"><div><div><h5 class="title"><a name="idp52128616"></a>members</h5></div></div></div>
             
 
             <p>When the members list is requested, a list of character
             objects is returned. Each object in the returned members list
             contains a character block as well as a rank field.</p>
 
-            <div class="example"><a name="idp140888"></a><p class="title"><b>Example 2.20. An example members block</b></p><div class="example-contents">
+            <div class="example"><a name="idp52129328"></a><p class="title"><b>Example 2.20. An example members block</b></p><div class="example-contents">
               
 
               <pre class="programlisting">  "members":[
@@ -2247,7 +2247,7 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="achievements"><div class="titlepage"><div><div><h5 class="title"><a name="idp145224"></a>achievements</h5></div></div></div>
+          <div class="section" title="achievements"><div class="titlepage"><div><div><h5 class="title"><a name="idp52133664"></a>achievements</h5></div></div></div>
             
 
             <p>When requesting achievement data, several sets of data will
@@ -2279,7 +2279,7 @@ Host: us.battle.net</pre>
                   criteria.</p>
                 </dd></dl></div>
 
-            <div class="example"><a name="idp153000"></a><p class="title"><b>Example 2.21. An example achievements block</b></p><div class="example-contents">
+            <div class="example"><a name="idp52141456"></a><p class="title"><b>Example 2.21. An example achievements block</b></p><div class="example-contents">
               
 
               <pre class="programlisting">"achievements":{
@@ -2296,18 +2296,19 @@ Host: us.battle.net</pre>
       </div>
     </div>
 
-    <div class="section" title="Realm Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp154272"></a>Realm Resources</h2></div></div></div>
+    <div class="section" title="Realm Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52142792"></a>Realm Resources</h2></div></div></div>
       
 
       <p>Realm APIs currently provide realm status information.</p>
 
-      <div class="section" title="Realm Status"><div class="titlepage"><div><div><h3 class="title"><a name="idp154848"></a>Realm Status</h3></div></div></div>
+      <div class="section" title="Realm Status"><div class="titlepage"><div><div><h3 class="title"><a name="idp52143368"></a>Realm Status</h3></div></div></div>
         
 
-        <p>The realm status API allows developers to retrieve realm status
-        information. This information is limited to whether or not the realm
-        is up, the type and state of the realm and the current
-        population.</p>
+        <p>The realm status API allows developers to retrieve realm
+        status information. This information is limited to whether or
+        not the realm is up, the type and state of the realm, the
+        current population, and the status of the two world pvp
+        zones.</p>
 
         <pre class="programlisting">URL = Host + "/api/wow/realm/status"</pre>
 
@@ -2316,7 +2317,7 @@ Host: us.battle.net</pre>
         parameter can optionally be passed to limit the realms returned to one
         or more.</p>
 
-        <div class="example"><a name="idp156576"></a><p class="title"><b>Example 2.22. An example Realm Status request and response</b></p><div class="example-contents">
+        <div class="example"><a name="idp52145184"></a><p class="title"><b>Example 2.22. An example Realm Status request and response</b></p><div class="example-contents">
           
 
           <pre class="programlisting">GET /api/wow/realm/status?realms=Medivh,Lightbringer HTTP/1.1
@@ -2331,6 +2332,18 @@ Host: us.battle.net
     {
       "type":"pve",
       "queue":false,
+      "wintergrasp":{
+        "area":1,
+	"controlling-faction":1,
+	"status":0,
+	"next":1334885402591
+      },
+      "tol-barad":{
+        "area":21,
+	"controlling-faction":1,
+	"status":0,
+	"next":1334884311692
+      },
       "status":true,
       "population":"high",
       "name":"Lightbringer",
@@ -2339,6 +2352,18 @@ Host: us.battle.net
     {
       "type":"pve",
       "queue":false,
+      "wintergrasp":{
+        "area":1,
+	"controlling-faction":0,
+	"status":0,
+	"next":1334885402591
+      },
+      "tol-barad":{
+        "area":21,
+	"controlling-faction":0,
+	"status":0,
+	"next":1334884311692
+      },
       "status":true,
       "population":"medium",
       "name":"Medivh",
@@ -2350,7 +2375,7 @@ Host: us.battle.net
       </div>
     </div>
 
-    <div class="section" title="Auction Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp158072"></a>Auction Resources</h2></div></div></div>
+    <div class="section" title="Auction Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52146984"></a>Auction Resources</h2></div></div></div>
       
 
       <p>Auction APIs currently provide rolling batches of data about
@@ -2359,7 +2384,7 @@ Host: us.battle.net
       has been generated and then fetching the most recently generated dump
       file if necessary.</p>
 
-      <div class="section" title="Current Auctions APIs"><div class="titlepage"><div><div><h3 class="title"><a name="idp159000"></a>Current Auctions APIs</h3></div></div></div>
+      <div class="section" title="Current Auctions APIs"><div class="titlepage"><div><div><h3 class="title"><a name="idp52147816"></a>Current Auctions APIs</h3></div></div></div>
         
 
         <p>This API resource provides a per-realm list of recently
@@ -2370,7 +2395,7 @@ Host: us.battle.net
         <p>There are no required query string parameters when accessing
         this resource.</p>
 
-        <div class="example"><a name="idp160304"></a><p class="title"><b>Example 2.23. An example Current Auctions request and response</b></p><div class="example-contents">
+        <div class="example"><a name="idp52149224"></a><p class="title"><b>Example 2.23. An example Current Auctions request and response</b></p><div class="example-contents">
           
 
           <pre class="programlisting">GET /api/wow/auction/data/medivh HTTP/1.1
@@ -2391,7 +2416,7 @@ Host: us.battle.net
         </div></div><br class="example-break">
       </div>
 
-      <div class="section" title="Current Auctions Data"><div class="titlepage"><div><div><h3 class="title"><a name="idp161488"></a>Current Auctions Data</h3></div></div></div>
+      <div class="section" title="Current Auctions Data"><div class="titlepage"><div><div><h3 class="title"><a name="idp52150416"></a>Current Auctions Data</h3></div></div></div>
         
 
         <p>The current auctions data is represented as JSON structures
@@ -2443,19 +2468,19 @@ Host: us.battle.net
       </div>
     </div>
 
-    <div class="section" title="Item Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp163488"></a>Item Resources</h2></div></div></div>
+    <div class="section" title="Item Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52152448"></a>Item Resources</h2></div></div></div>
       
 
       <p>Item APIs currently provide item information.</p>
 
-      <div class="section" title="Item API"><div class="titlepage"><div><div><h3 class="title"><a name="idp164056"></a>Item API</h3></div></div></div>
+      <div class="section" title="Item API"><div class="titlepage"><div><div><h3 class="title"><a name="idp52153016"></a>Item API</h3></div></div></div>
         
 
         <p>The item API provides detailed item information.</p>
 
         <pre class="programlisting">URL = Host + "/api/wow/item/" + ItemId</pre>
 
-        <div class="example"><a name="idp165024"></a><p class="title"><b>Example 2.24. An example Item API request and response</b></p><div class="example-contents">
+        <div class="example"><a name="idp52154024"></a><p class="title"><b>Example 2.24. An example Item API request and response</b></p><div class="example-contents">
           
 
           <pre class="programlisting">GET /api/wow/item/38268 HTTP/1.1
@@ -2512,13 +2537,13 @@ Host: us.battle.net
       </div>
     </div>
 
-    <div class="section" title="PVP Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp166904"></a>PVP Resources</h2></div></div></div>
+    <div class="section" title="PVP Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52155968"></a>PVP Resources</h2></div></div></div>
       
 
       <p>PVP APIs currently provide arena team and ladder
       information.</p>
 
-      <div class="section" title="Arena Team API"><div class="titlepage"><div><div><h3 class="title"><a name="idp167672"></a>Arena Team API</h3></div></div></div>
+      <div class="section" title="Arena Team API"><div class="titlepage"><div><div><h3 class="title"><a name="idp52156640"></a>Arena Team API</h3></div></div></div>
         
 
         <p>The Arena Team API provides detailed arena team
@@ -2527,7 +2552,7 @@ Host: us.battle.net
         <pre class="programlisting">TeamSize = "2v2" | "3v3" | "5v5"
 URL = Host + "/api/wow/arena/" + Realm + "/" + TeamSize + "/" + TeamName</pre>
 
-        <div class="example"><a name="idp168664"></a><p class="title"><b>Example 2.25. An example Arena Team API request and response</b></p><div class="example-contents">
+        <div class="example"><a name="idp52157648"></a><p class="title"><b>Example 2.25. An example Arena Team API request and response</b></p><div class="example-contents">
           
 
           <pre class="programlisting">GET /api/wow/arena/bonechewer/2v2/Samurai%20Jack HTTP/1.1
@@ -2599,7 +2624,7 @@ Host: us.battle.net
         </div></div><br class="example-break">
       </div>
 
-      <div class="section" title="Arena Ladder API"><div class="titlepage"><div><div><h3 class="title"><a name="idp171048"></a>Arena Ladder API</h3></div></div></div>
+      <div class="section" title="Arena Ladder API"><div class="titlepage"><div><div><h3 class="title"><a name="idp52160056"></a>Arena Ladder API</h3></div></div></div>
         
 
         <p>The Arena Team Ladder API provides arena ladder information for
@@ -2608,7 +2633,7 @@ Host: us.battle.net
         <pre class="programlisting">TeamSize = "2v2" | "3v3" | "5v5"
 URL = Host + "/api/wow/pvp/arena/" + Battlegroup + "/" + TeamSize</pre>
 
-        <div class="example"><a name="idp172048"></a><p class="title"><b>Example 2.26. An example Arena Team Ladder API request and response</b></p><div class="example-contents">
+        <div class="example"><a name="idp52161040"></a><p class="title"><b>Example 2.26. An example Arena Team Ladder API request and response</b></p><div class="example-contents">
           
 
           <pre class="programlisting">GET /api/wow/pvp/arena/ruin/2v2 HTTP/1.1
@@ -2778,21 +2803,104 @@ Host: us.battle.net
 }</pre>
         </div></div><br class="example-break">
       </div>
+
+      <div class="section" title="Rated Battleground Ladder API"><div class="titlepage"><div><div><h3 class="title"><a name="idp52166136"></a>Rated Battleground Ladder API</h3></div></div></div>
+        
+
+        <p>The Rated Battleground Ladder API provides ladder information for
+        a region.</p>
+
+        <pre class="programlisting">URL = Host + "/api/wow/pvp/ratedbg/ladder</pre>
+
+        <div class="example"><a name="idp52167112"></a><p class="title"><b>Example 2.27. An example Rated Battleground Ladder API request and response</b></p><div class="example-contents">
+          
+
+          <pre class="programlisting">GET /api/wow/pvp/ratedbg/ladder HTTP/1.1
+Host: us.battle.net
+&lt;http headers&gt;</pre>
+
+          <pre class="programlisting">{
+  "bgRecord":[
+    {
+      "rank":1,
+      "bgRating":3021,
+      "wins":290,
+      "losses":32,
+      "played":322,
+      "realm":
+      {
+        "name":"Kel'Thuzad",
+	"slug":"kelthuzad",
+	"battlegroup":"Nightfall"
+      },
+      "battlegroup":
+      {
+        "name":"Nightfall",
+	"slug":"nightfall"
+      },
+      "character":
+      {
+        "name":"Player1",
+	"realm":"Kel'Thuzad",
+	"class":8,
+	"race":1,
+	"gender":1,
+	"level":85,
+	"achievementPoints":5550,
+	"thumbnail":"kelthuzad/173/xxx-avatar.jpg"
+      },
+      "lastModified":1334692961000
+    },
+    {
+      "rank":2,
+      "bgRating":3020,
+      "wins":290,
+      "losses":34,
+      "played":324,
+      "realm":
+      {
+        "name":"Kel'Thuzad",
+	"slug":"kelthuzad",
+	"battlegroup":"Nightfall"
+      },
+      "battlegroup":
+      {
+        "name":"Nightfall",
+	"slug":"nightfall"
+      },
+      "character":
+      {
+        "name":"Player2",
+	"realm":"Kel'Thuzad",
+	"class":3,
+	"race":2,
+	"gender":1,
+	"level":85,
+	"achievementPoints":6650,
+	"thumbnail":"kelthuzad/173/xxx-avatar.jpg"
+      },
+      "lastModified":1334692961000
+    },
+    ...
+  ]
+}</pre>
+        </div></div><br class="example-break">
+      </div>
     </div>
 
-    <div class="section" title="Quest Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp177208"></a>Quest Resources</h2></div></div></div>
+    <div class="section" title="Quest Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52169368"></a>Quest Resources</h2></div></div></div>
       
 
       <p>Quest APIs currently provide quest information.</p>
 
-      <div class="section" title="Quest API"><div class="titlepage"><div><div><h3 class="title"><a name="idp177920"></a>Quest API</h3></div></div></div>
+      <div class="section" title="Quest API"><div class="titlepage"><div><div><h3 class="title"><a name="idp52169936"></a>Quest API</h3></div></div></div>
         
 
         <p>The quest API provides detailed quest information.</p>
 
         <pre class="programlisting">URL = Host + "/api/wow/quest/" + QuestId</pre>
 
-        <div class="example"><a name="idp178824"></a><p class="title"><b>Example 2.27. An example quest API request and response</b></p><div class="example-contents">
+        <div class="example"><a name="idp52170888"></a><p class="title"><b>Example 2.28. An example quest API request and response</b></p><div class="example-contents">
           
 
           <pre class="programlisting">GET /api/wow/quest/13146 HTTP/1.1
@@ -2814,13 +2922,13 @@ Host: us.battle.net
       </div>
     </div>
 
-    <div class="section" title="Data Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp180216"></a>Data Resources</h2></div></div></div>
+    <div class="section" title="Data Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52172280"></a>Data Resources</h2></div></div></div>
       
 
       <p>The data APIs provide information that can compliment profile
       information to provide structure, definition and context.</p>
 
-      <div class="section" title="Battlegroups"><div class="titlepage"><div><div><h3 class="title"><a name="idp181144"></a>Battlegroups</h3></div></div></div>
+      <div class="section" title="Battlegroups"><div class="titlepage"><div><div><h3 class="title"><a name="idp52173208"></a>Battlegroups</h3></div></div></div>
         
 
         <p>The battlegroups data API provides the list of battlegroups for
@@ -2829,7 +2937,7 @@ Host: us.battle.net
         <pre class="programlisting">URL = Host + "/api/wow/data/battlegroups"</pre>
       </div>
 
-      <div class="section" title="Character Races"><div class="titlepage"><div><div><h3 class="title"><a name="idp182072"></a>Character Races</h3></div></div></div>
+      <div class="section" title="Character Races"><div class="titlepage"><div><div><h3 class="title"><a name="idp52174136"></a>Character Races</h3></div></div></div>
         
 
         <p>The character races data API provides a list of character
@@ -2838,7 +2946,7 @@ Host: us.battle.net
         <pre class="programlisting">URL = Host + "/api/wow/data/character/races"</pre>
       </div>
 
-      <div class="section" title="Character Classes"><div class="titlepage"><div><div><h3 class="title"><a name="idp183072"></a>Character Classes</h3></div></div></div>
+      <div class="section" title="Character Classes"><div class="titlepage"><div><div><h3 class="title"><a name="idp52175136"></a>Character Classes</h3></div></div></div>
         
 
         <p>The character classes data API provides a list of character
@@ -2847,7 +2955,7 @@ Host: us.battle.net
         <pre class="programlisting">URL = Host + "/api/wow/data/character/classes"</pre>
       </div>
 
-      <div class="section" title="Character Achievements"><div class="titlepage"><div><div><h3 class="title"><a name="idp184096"></a>Character Achievements</h3></div></div></div>
+      <div class="section" title="Character Achievements"><div class="titlepage"><div><div><h3 class="title"><a name="idp52176160"></a>Character Achievements</h3></div></div></div>
         
 
         <p>The character achievements data API provides a list of all of
@@ -2857,7 +2965,7 @@ Host: us.battle.net
         <pre class="programlisting">URL = Host + "/api/wow/data/character/achievements"</pre>
       </div>
 
-      <div class="section" title="Guild Rewards"><div class="titlepage"><div><div><h3 class="title"><a name="idp185176"></a>Guild Rewards</h3></div></div></div>
+      <div class="section" title="Guild Rewards"><div class="titlepage"><div><div><h3 class="title"><a name="idp52177240"></a>Guild Rewards</h3></div></div></div>
         
 
         <p>The guild rewards data API provides a list of all guild
@@ -2866,7 +2974,7 @@ Host: us.battle.net
         <pre class="programlisting">URL = Host + "/api/wow/data/guild/rewards"</pre>
       </div>
 
-      <div class="section" title="Guild Perks"><div class="titlepage"><div><div><h3 class="title"><a name="idp186120"></a>Guild Perks</h3></div></div></div>
+      <div class="section" title="Guild Perks"><div class="titlepage"><div><div><h3 class="title"><a name="idp52178184"></a>Guild Perks</h3></div></div></div>
         
 
         <p>The guild perks data API provides a list of all guild
@@ -2875,7 +2983,7 @@ Host: us.battle.net
         <pre class="programlisting">URL = Host + "/api/wow/data/guild/perks"</pre>
       </div>
 
-      <div class="section" title="Guild Achievements"><div class="titlepage"><div><div><h3 class="title"><a name="idp187104"></a>Guild Achievements</h3></div></div></div>
+      <div class="section" title="Guild Achievements"><div class="titlepage"><div><div><h3 class="title"><a name="idp52179168"></a>Guild Achievements</h3></div></div></div>
         
 
         <p>The guild achievements data API provides a list of all of the
@@ -2885,7 +2993,7 @@ Host: us.battle.net
         <pre class="programlisting">URL = Host + "/api/wow/data/guild/achievements"</pre>
       </div>
 
-      <div class="section" title="Item Classes"><div class="titlepage"><div><div><h3 class="title"><a name="idp188240"></a>Item Classes</h3></div></div></div>
+      <div class="section" title="Item Classes"><div class="titlepage"><div><div><h3 class="title"><a name="idp52180304"></a>Item Classes</h3></div></div></div>
         
 
         <p>The item classes data API provides a list of item
@@ -2894,7 +3002,7 @@ Host: us.battle.net
         <pre class="programlisting">URL = Host + "/api/wow/data/item/classes"</pre>
       </div>
 
-      <div class="section" title="Battlegroups"><div class="titlepage"><div><div><h3 class="title"><a name="idp189160"></a>Battlegroups</h3></div></div></div>
+      <div class="section" title="Battlegroups"><div class="titlepage"><div><div><h3 class="title"><a name="idp52181224"></a>Battlegroups</h3></div></div></div>
         
 
 	<p>The battlegroups data API provides a list of all the battlegroups.</p>
@@ -2904,7 +3012,7 @@ Host: us.battle.net
     </div>
   </div>
 
-  <div class="chapter" title="Chapter 3. API Policy"><div class="titlepage"><div><div><h2 class="title"><a name="idp180376"></a>Chapter 3. API Policy</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#idp191320">Intended Audience</a></span></dt><dt><span class="section"><a href="#idp194384">Service Availability Notice</a></span></dt><dt><span class="section"><a href="#idp198120">Applications may not charge premiums for features that use the API.</a></span></dt><dt><span class="section"><a href="#idp199384">Applications must not negatively impact Blizzard Entertainment games, services, or other players.</a></span></dt><dt><span class="section"><a href="#idp200320">Application code must be completely visible.</a></span></dt><dt><span class="section"><a href="#idp201240">Applications may not imply any association with Blizzard Entertainment.</a></span></dt><dt><span class="section"><a href="#idp202032">Applications must not contain offensive or objectionable material.</a></span></dt><dt><span class="section"><a href="#idp203248">Blizzard trademarks, titles, or tradenames should not be used when naming an application.</a></span></dt><dt><span class="section"><a href="#idp204152">License for Use</a></span></dt><dt><span class="section"><a href="#idp205144">Policy Compliance Notice</a></span></dt><dt><span class="section"><a href="#idp205768"></a></span></dt></dl></div>
+  <div class="chapter" title="Chapter 3. API Policy"><div class="titlepage"><div><div><h2 class="title"><a name="idp52172440"></a>Chapter 3. API Policy</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#idp52183384">Intended Audience</a></span></dt><dt><span class="section"><a href="#idp52186448">Service Availability Notice</a></span></dt><dt><span class="section"><a href="#idp52190184">Applications may not charge premiums for features that use the API.</a></span></dt><dt><span class="section"><a href="#idp52191448">Applications must not negatively impact Blizzard Entertainment games, services, or other players.</a></span></dt><dt><span class="section"><a href="#idp52192416">Application code must be completely visible.</a></span></dt><dt><span class="section"><a href="#idp52193304">Applications may not imply any association with Blizzard Entertainment.</a></span></dt><dt><span class="section"><a href="#idp52194160">Applications must not contain offensive or objectionable material.</a></span></dt><dt><span class="section"><a href="#idp52195336">Blizzard trademarks, titles, or tradenames should not be used when naming an application.</a></span></dt><dt><span class="section"><a href="#idp52196240">License for Use</a></span></dt><dt><span class="section"><a href="#idp52197232">Policy Compliance Notice</a></span></dt><dt><span class="section"><a href="#idp52197856"></a></span></dt></dl></div>
     
 
     <p>With the continued popularity of third-party applications, which are
@@ -2915,7 +3023,7 @@ Host: us.battle.net
     to help promote an enjoyable gaming environment for all of our
     players.</p>
 
-    <div class="section" title="Intended Audience"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp191320"></a>Intended Audience</h2></div></div></div>
+    <div class="section" title="Intended Audience"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52183384"></a>Intended Audience</h2></div></div></div>
       
 
       <p>The Third-Party API Usage Policy is for developers developing
@@ -2933,7 +3041,7 @@ Host: us.battle.net
       definition of what constitutes an application and Blizzard Entertainment
       Web API resources at any time.</p>
     </div>
-    <div class="section" title="Service Availability Notice"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp194384"></a>Service Availability Notice</h2></div></div></div>
+    <div class="section" title="Service Availability Notice"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52186448"></a>Service Availability Notice</h2></div></div></div>
       
 
       <p>Blizzard Entertainment makes no guarantee of the availability of any
@@ -2961,7 +3069,7 @@ Host: us.battle.net
       the API completely and without warning.</p>
     </div>
 
-    <div class="section" title="Applications may not charge premiums for features that use the API."><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp198120"></a>Applications may not charge premiums for features that use the API.</h2></div></div></div>
+    <div class="section" title="Applications may not charge premiums for features that use the API."><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52190184"></a>Applications may not charge premiums for features that use the API.</h2></div></div></div>
       
 
       <p>"Premium" versions of applications offering additional for-pay
@@ -2973,7 +3081,7 @@ Host: us.battle.net
       before features or functionality becomes available to the player.</p>
     </div>
 
-    <div class="section" title="Applications must not negatively impact Blizzard Entertainment games, services, or other players."><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp199384"></a>Applications must not negatively impact Blizzard Entertainment games, services, or other players.</h2></div></div></div>
+    <div class="section" title="Applications must not negatively impact Blizzard Entertainment games, services, or other players."><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52191448"></a>Applications must not negatively impact Blizzard Entertainment games, services, or other players.</h2></div></div></div>
       
 
       <p>Applications must perform no function which, in Blizzard
@@ -2982,7 +3090,7 @@ Host: us.battle.net
       the game for other players.</p>
     </div>
 
-    <div class="section" title="Application code must be completely visible."><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp200320"></a>Application code must be completely visible.</h2></div></div></div>
+    <div class="section" title="Application code must be completely visible."><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52192416"></a>Application code must be completely visible.</h2></div></div></div>
       
 
       <p>The programming code of an application must in no way be hidden or
@@ -2990,14 +3098,14 @@ Host: us.battle.net
       public.</p>
     </div>
     
-    <div class="section" title="Applications may not imply any association with Blizzard Entertainment."><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp201240"></a>Applications may not imply any association with Blizzard Entertainment.</h2></div></div></div>
+    <div class="section" title="Applications may not imply any association with Blizzard Entertainment."><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52193304"></a>Applications may not imply any association with Blizzard Entertainment.</h2></div></div></div>
       
 
       <p>Applications may not imply any association with, or endorsement by,
       Blizzard Entertainment.</p>
     </div>
 
-    <div class="section" title="Applications must not contain offensive or objectionable material."><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp202032"></a>Applications must not contain offensive or objectionable material.</h2></div></div></div>
+    <div class="section" title="Applications must not contain offensive or objectionable material."><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52194160"></a>Applications must not contain offensive or objectionable material.</h2></div></div></div>
       
 
       <p>Blizzard Entertainment requires that applications contain no
@@ -3009,7 +3117,7 @@ Host: us.battle.net
       world.</p>
     </div>
 
-    <div class="section" title="Blizzard trademarks, titles, or tradenames should not be used when naming an application."><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp203248"></a>Blizzard trademarks, titles, or tradenames should not be used when naming an application.</h2></div></div></div>
+    <div class="section" title="Blizzard trademarks, titles, or tradenames should not be used when naming an application."><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52195336"></a>Blizzard trademarks, titles, or tradenames should not be used when naming an application.</h2></div></div></div>
       
 
       <p>Applications may not use names based on Blizzard&#8217;s trademarks or
@@ -3017,7 +3125,7 @@ Host: us.battle.net
       application.</p>
     </div>
 
-    <div class="section" title="License for Use"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp204152"></a>License for Use</h2></div></div></div>
+    <div class="section" title="License for Use"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52196240"></a>License for Use</h2></div></div></div>
       
 
       <p>Applications that use Blizzard Entertainment intellectual property,
@@ -3027,7 +3135,7 @@ Host: us.battle.net
       distributed.</p>
     </div>
 
-    <div class="section" title="Policy Compliance Notice"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp205144"></a>Policy Compliance Notice</h2></div></div></div>
+    <div class="section" title="Policy Compliance Notice"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idp52197232"></a>Policy Compliance Notice</h2></div></div></div>
       
 
       <p>Blizzard Entertainment is committed to maintaining the integrity of
